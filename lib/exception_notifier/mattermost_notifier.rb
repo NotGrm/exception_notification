@@ -37,6 +37,7 @@ module ExceptionNotifier
         @request_items = { url: request.original_url,
                            http_method: request.method,
                            ip_address: request.remote_ip,
+                           user_agent: request.user_agent,
                            parameters: request.filtered_parameters,
                            timestamp: Time.current }
 
